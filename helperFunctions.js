@@ -58,17 +58,21 @@ const pullingMessages = async (affinity, sessionkey) =>
       console.log(err);
     });
 
-const sendMessages = async (text,affinity, sessionkey) =>
+const sendMessages = async (text, affinity, sessionkey) =>
   await axios
-    .post(apiEndpoints.sendingmessages,{
-        "text": text,
-    },{
-      headers: {
-        "X-LIVEAGENT-API-VERSION": 34,
-        "X-LIVEAGENT-AFFINITY": affinity,
-        "X-LIVEAGENT-SESSION-KEY": sessionkey,
+    .post(
+      apiEndpoints.sendingmessages,
+      {
+        text: text,
       },
-    })
+      {
+        headers: {
+          "X-LIVEAGENT-API-VERSION": 34,
+          "X-LIVEAGENT-AFFINITY": affinity,
+          "X-LIVEAGENT-SESSION-KEY": sessionkey,
+        },
+      }
+    )
     .then((res) => res.data)
     .then((res) => {
       // console.log(res);
