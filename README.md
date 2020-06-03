@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/41849970/83685479-5e47cd80-a606-11ea-9b96-6118ec777fc4.png">
+</p>
+
 # Saleforce Live Agent(Chat) Console Client.
 
 This is a simple Javascript console app utilising [Saleforce Chat API](https://developer.salesforce.com/docs/atlas.en-us.live_agent_rest.meta/live_agent_rest/live_agent_rest_understanding_resources.htm). You can use this console app to send and recieve messages from online agents.
