@@ -32,7 +32,7 @@ Demo Video: COMING_SOON.
 
     1. `SERVER_URL`: Replace this with your own Chat API Endpoint. To find this value, go to your **Salesforce Dashboard** -> **Setup (In Gear Icon)** -> **Quick Find Search** -> **Type in** `chat setting` -> **Click on Chat Settings option**
     
-    1. For remaining values you will need your `Embedded Service Code Snippet`, to find it again go to **Quick Find Search** -> **Type in** `Embedded Service Deployments` -> **Find your current deployment from the list** -> **Click on drop down menu and select 'View'** -> **Scroll Down and click on 'Get Code' button**. From the code, you can find the values here:
+    1. For remaining values you will need your `Embedded Service Code Snippet` to find it, again go to **Quick Find Search** -> **Type in** `Embedded Service Deployments` -> **Find your current deployment from the list** -> **Click on drop down menu and select 'View'** -> **Scroll Down and click on 'Get Code' button**. From the code, you can find the values here:
     
     <img width="946" alt="Screenshot 2020-06-04 at 1 32 36 AM" src="https://user-images.githubusercontent.com/41849970/83683865-ad403380-a603-11ea-8e39-3b0ee9b35a58.png">
 
