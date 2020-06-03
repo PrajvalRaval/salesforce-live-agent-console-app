@@ -4,11 +4,15 @@ This is a simple Javascript console app utilising [Saleforce Chat API's](https:/
 
 Demo Video: COMING_SOON.
 
+---
+
 # Pre-requisites:
 
-1. Saleforce Developer Account with Chat Setup.
+1. Saleforce Developer Account with Live Agent(Chat) Setup.
 
 2. Node.js
+
+---
 
 # Installation
 
@@ -34,4 +38,6 @@ Demo Video: COMING_SOON.
 
 1. Run the application.
 
-  `node index`
+    `node index`
+    
+ ---
