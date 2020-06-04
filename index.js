@@ -51,7 +51,7 @@ async function main() {
 
     if (sendingChatRequest === true) {
       console.log(
-        chalk.black.bgGreenBright("\n Chat Request Sent Successfully.")
+        chalk.black.bgGreenBright("\n Chat Session Initiated Successfully.")
       );
 
       var pullmessageorg = await helperFunctions.pullingMessages(
