@@ -75,9 +75,8 @@ async function main() {
             "\n" +
               chalk.cyanBright(pullmessageorg.messages[0].message.name) +
               chalk.white(
-                " is here to help you. Should be joining you any second now."
-              )
-          );
+                " is here to help you. Should be joining you any second now. If you wish to stop the chat at any time, please send the following message: ") + chalk.red("end_chat\n")
+              );
         }
         if (pullmessageorg.messages[0].type === "ChatMessage") {
           console.log(
@@ -88,7 +87,25 @@ async function main() {
               "\n"
           );
 
-          let text = inputReader.readLine(chalk.red("You : "));
+          let text = inputReader.readLine(chalk.blueBright("You : "));
+
+          if (text === "end_chat") {
+            const stopChat = await helperFunctions.stopChat(
+              "client ended chat",
+              affinity,
+              sessionkey
+            );
+
+            if (stopChat === "OK") {
+              console.log(
+                chalk.white.bgMagenta("\n Chat Ended. You Left. \n")
+              );
+              return;
+            } else {
+              console.log(chalk.white.bgRed("\n Error: Cannot Stop Chat \n"));
+              return;
+            }
+          }
 
           const sendMessage = await helperFunctions.sendMessages(
             text,

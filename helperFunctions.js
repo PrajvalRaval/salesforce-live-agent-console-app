@@ -82,7 +82,32 @@ const sendMessages = async (text, affinity, sessionkey) =>
       console.log(err);
     });
 
+const stopChat = async (reason, affinity, sessionkey) =>
+  await axios
+    .post(
+      apiEndpoints.stopchat,
+      {
+        "reason": reason
+      },
+      {
+        headers: {
+          "X-LIVEAGENT-API-VERSION": 34,
+          "X-LIVEAGENT-AFFINITY": affinity,
+          "X-LIVEAGENT-SESSION-KEY": sessionkey,
+        },
+      }
+    )
+    .then((res) => res.data)
+    .then((res) => {
+      // console.log(res);
+      return res;
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+
 module.exports.sessionId = sessionId;
 module.exports.sendingChatRequest = sendingChatRequest;
 module.exports.pullingMessages = pullingMessages;
 module.exports.sendMessages = sendMessages;
+module.exports.stopChat = stopChat;
