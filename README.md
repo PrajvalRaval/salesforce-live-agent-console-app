@@ -49,6 +49,6 @@ Demo Video: [Here](https://drive.google.com/file/d/1Nc6n5J1OTpc8c87sLoYpIp3K7qiu
     
 1. Run the application.
 
-    `node index`
+    `npm start`
     
  ---
