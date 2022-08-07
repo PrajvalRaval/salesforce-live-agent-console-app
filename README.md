@@ -6,8 +6,6 @@
 
 This is a simple Javascript console app utilising [Saleforce Chat API](https://developer.salesforce.com/docs/atlas.en-us.live_agent_rest.meta/live_agent_rest/live_agent_rest_understanding_resources.htm). You can use this console app to send and recieve messages from online agents.
 
-Demo Video: [Here](https://drive.google.com/file/d/1Nc6n5J1OTpc8c87sLoYpIp3K7qiulMbs/view?usp=sharing).
-
 ---
 
 # Pre-requisites:
